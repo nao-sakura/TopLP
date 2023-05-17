@@ -584,6 +584,10 @@ video {
   margin-top: 4rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .block {
   display: block;
 }
@@ -711,6 +715,10 @@ video {
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -1096,6 +1104,10 @@ video {
 
   .md\:flex-col {
     flex-direction: column;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
   }
 
   .md\:px-32 {
