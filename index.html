@@ -5,14 +5,185 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
   <link rel="stylesheet" href="./dist/main.css">
   <link rel="stylesheet" href="./dist/style.css">
   <title>Template of Tailwind and Sass</title>
 </head>
 <body>
-  <div>
-    <h1 class="text-4xl font-bold text-center mt-40">Sample of Tailwind and Sass</h1>
-    <p class="text-center mt-4">If you don't use npm run dev, install tailwind latest version</p>
+  <div class="wrap">
+    <header class="relative">
+      <img src="./img/hero.png" alt="飛行機の写真" class="w-full">
+      <!-- <a href="https://www.sakuratravel.jp/">
+        <button class="absolute bottom-20 left-16  px-16 py-8 rounded-full bg-Primery"><p class="text-white font-bold text-5xl">今すぐ航空券を検索！</p></button>
+      </a> -->
+      <a href="https://www.sakuratravel.jp/">
+        <button class="absolute bottom-5 left-2  px-4 py-2 rounded-full bg-Primery"><p class="text-white font-bold text-base">今すぐ航空券を検索！</p></button>
+      </a>
+    </header>
+    <div class="conteiner">
+      <section class="m-auto">
+        
+        <div class="title mt-6">
+          <p class="text-center text-Primery text-sm leading-none">さくらトラベルの特徴</p>
+          <p class="text-center eng text-Primery text-4xl font-black leading-none">Features</p>
+        </div>
+
+        <div class="cards">
+          <div class="card bg-white m-auto flex flex-col items-center px-5 py-8 mt-6">
+            <p class="eng text-Primery text-3xl leading-3">POINT1</p>
+            <img class="illust" src="./img/price.svg" alt="">
+            <p class="font-bold text-2xl text-center">取扱手数料</br>業界最安水準</p>
+          </div>
+  
+          <div class="card bg-white m-auto flex flex-col items-center px-5 py-8 mt-6">
+            <p class="eng text-Primery text-3xl leading-3">POINT2</p>
+            <img class="illust" src="./img/ticket.svg" alt="">
+            <p class="font-bold text-2xl text-center">株主優待割引取扱</p>
+            <p class="text-center"><span class="text-Primery">株主優待券がなくても</span>優待価格で航空券を購入できます。</p>
+          </div>
+  
+          <div class="card bg-white m-auto flex flex-col items-center px-5 py-8 mt-6">
+            <p class="eng text-Primery text-3xl leading-3">POINT3</p>
+            <img class="illust" src="./img/payment.svg" alt="">
+            <p class="font-bold text-2xl text-center">豊富な決済方法</p>
+            <p class="text-center">クレジットカードはもちろん、キャッシュレス決済可能です！</p>
+          </div>
+
+          <div class="card bg-white m-auto flex flex-col items-center px-5 py-8 mt-6">
+            <p class="eng text-Primery text-3xl leading-3">POINT4</p>
+            <img class="illust" src="./img/flight.svg" alt="">
+            <p class="font-bold text-2xl text-center">全18社全国空港対応</p>
+            <p class="text-center">主要航空会社からLCCまで、幅広い航空会社に対応！</p>
+          </div>
+
+          <div class="card bg-white m-auto flex flex-col items-center px-5 py-8 mt-6">
+            <p class="eng text-Primery text-3xl leading-3">POINT5</p>
+            <img class="illust" src="./img/calender.svg" alt="">
+            <p class="font-bold text-2xl text-center">24時間365日対応</p>
+            <p class="text-center">お好きなタイミングで航空券を検索＆購入できます！</p>
+          </div>
+
+          <div class="card bg-white m-auto flex flex-col items-center px-5 py-8 mt-6">
+            <p class="eng text-Primery text-3xl leading-3">POINT6</p>
+            <img class="illust" src="./img/apply.svg" alt="">
+            <p class="font-bold text-2xl text-center">当日でもOK</p>
+            <p class="text-center">最短出発90分前まで受付可能！ </br>突然のご移動にも便利！</p>
+          </div>
+        </div>
+
+        <div class="w-full flex justify-center">
+          <a href="https://www.sakuratravel.jp/">
+            <button class="px-10 py-4 rounded-full bg-Primery mt-8"><p class="text-white font-bold text-2xl">今すぐ航空券を検索！</p></button>
+          </a>
+        </div>
+
+      </section>
+
+      <section>
+
+        <div class="mt-12 py-6 px-2 bg-Primery-back">
+          <p class="text-2xl font-black pl-4">さくらトラベル<br>アプリでもっと便利に！</p>
+          <div class="flex mt-6">
+            <div class="w-3/5">
+              <ul>
+                <li class="flex items-center">
+                  <span class="material-symbols-sharp">check_circle</span>
+                  <p class="text-base font-bold">18社の航空券を一発検索</p>
+                </li>
+                <li class="flex items-center mt-2">
+                  <span class="material-symbols-sharp">check_circle</span>
+                  <p class="text-sm font-bold">最安便がスグに見つかる！</p>
+                </li>
+                <li class="flex items-center mt-2">
+                  <span class="material-symbols-sharp">check_circle</span>
+                  <p class="text-base font-bold">航空券を選んで予約！</p>
+                </li>
+                <li class="flex items-center mt-2">
+                  <span class="material-symbols-sharp">check_circle</span>
+                  <p class="text-base font-bold">24時間365日対応！</p>
+                </li>
+              </ul>
+              <div class="w-full px-5 mt-6">
+                <a href="">
+                  <img class="w-fit" src="./img/apple.png" alt="">
+                </a>
+                <a href="">
+                  <img class="mt-3" src="./img/google-play.png" alt="">
+                </a>
+              </div>
+            </div>
+            <img src="./img/phone.png" class="w-2/5 h-auto" alt="">
+          </div>
+        </div>
+
+      </section>
+
+      <section class="px-3">
+        <div class="bg-white py-8 mt-12 contact">
+          <div class="title">
+            <p class="text-center text-Primery text-sm leading-none">お問合せ</p>
+            <p class="text-center eng text-Primery text-4xl font-black leading-none">Contact</p>
+          </div>
+
+          <div class="mail px-8 mt-6">
+            <div class="flex items-center">
+              <span class="material-symbols-sharp text-Text-black">mail</span>
+              <p class="text-lg font-bold">メールアドレス</p>
+            </div>
+            <a href=""><p class="text-Text-link font-bold text-lg mt-1">web@sakuratravel.jp</p></a>
+            <p class="text-xs mt-1">24時間/年中無休！<br>
+              ※取消・変更のご依頼は（10:00～18:00/年中無休）</p>
+              <div class="w-full flex justify-center">
+                <a href="https://www.sakuratravel.jp/">
+                  <button class="w-full px-8 py-2 rounded-full bg-Primery mt-3"><p class="text-white font-bold text-lg">お問合せフォームはこちら</p></button>
+                </a>
+              </div>
+          </div>
+
+          <div class="mail px-8 mt-8">
+            <div class="flex items-center">
+              <span class="material-symbols-sharp text-Text-black">phone_in_talk</span>
+              <p class="text-lg font-bold">電話でのお問合せ</p>
+            </div>
+            <a href=""><p class="text-Text-link font-bold text-lg mt-1">0570-088-044</p></a>
+            <p class="text-xs mt-1">ナビダイヤル/有料（10:00～18:00/年中無休）<br>
+              ※お電話でのご予約は承っておりません。<br>
+              ※操作方法のご説明は承っておりません。</p>
+          </div>
+
+        </div>
+      </section>
+
+      <section>
+
+        <div class="flex flex-col items-center mt-12">
+          <a href="">
+            <img class="pr" src="./img/pr1.png" alt="">
+          </a>
+  
+          <a href="" class="mt-6">
+            <img class="pr" src="./img/pr2.png" alt="">
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <div class="mt-32 px-5">
+          <p class="text-xl font-bold">ご注意</p>
+          <p class="mt-2 text-sm">※1 メール対応24時間/年中無休。取消・変更のご依頼は10:00～18:00になります。</p>
+          <p class="mt-2 text-sm">※2 掲載情報や運行情報は、航空会社・空港の状況により異なる場合があります。</p>
+          <p class="mt-2 text-sm">※3 クレジット決済の場合を除く。時間帯によっては、金融機関翌営業日になる場合もございます。</p>
+        </div>
+      </section>
+
+
+    </div>
   </div>
 </body>
 </html>
