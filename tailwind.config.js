@@ -23,6 +23,7 @@ module.exports = {
         "Primery-back": "#FFF0F5",
         "Text-black": "#232323",
         "Text-link": "#386FFC",
+        "Text-alart": "#FC3854",
       },
     },
   },
