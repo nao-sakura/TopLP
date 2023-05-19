@@ -776,16 +776,12 @@ video {
   color: rgb(56 111 252 / var(--tw-text-opacity));
 }
 
-.hover\:opacity-60:hover {
-  opacity: 0.6;
+.hover\:opacity-90:hover {
+  opacity: 0.9;
 }
 
 .hover\:opacity-80:hover {
   opacity: 0.8;
-}
-
-.hover\:opacity-90:hover {
-  opacity: 0.9;
 }
 
 @media (min-width: 640px) {
